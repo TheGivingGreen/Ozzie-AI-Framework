@@ -4,9 +4,17 @@
 
 What should the agent accomplish?
 
+## Task Route
+
+Discovery, spec, plan, execute, review, validate, Git, handoff, or mixed.
+
 ## Context
 
 What does the agent need to know?
+
+## Spec Summary
+
+What intent, requirements, and acceptance criteria have already been approved?
 
 ## Scope
 
@@ -20,9 +28,17 @@ What should the agent avoid?
 
 - TBD
 
+## Review Lenses
+
+Which lenses should be applied: strategy, audience/user, design, technical, QA, risk/security, documentation, release/publishing?
+
 ## Verification
 
-What checks should be run before handoff?
+What evidence should be gathered before handoff?
+
+## Context Memory
+
+What decisions, validation notes, or handoff details should be preserved for future sessions?
 
 ## Handoff Notes
 
