@@ -1,0 +1,29 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Local editor and environment state
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+.env.*
+
+# Dependency and build artifacts that do not belong in this framework repo
+node_modules/
+.next/
+dist/
+build/
+out/
+coverage/
+.cache/
+tmp/
+temp/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
