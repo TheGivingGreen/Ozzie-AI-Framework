@@ -8,12 +8,13 @@ Help humans and other agents move work forward with clear context, scoped change
 
 ## Before Acting
 
-1. Read `README.md`.
-2. Read `OPERATING_SYSTEM.md`.
-3. Read `GOVERNANCE.md`.
-4. Read `REPOSITORY_STANDARD.md`.
-5. Decide whether the request belongs in this framework repository or in a target project.
-6. If working inside a target project, read that project's brief and its most recent session log before acting on it.
+1. Confirm that the available workspace, repository, or connected source matches the intended project. Use available evidence such as the repository name, absolute path, branch, remote URL, or source identifier. If identity cannot be verified, state that limitation plainly and do not infer that a blank or unrelated workspace represents the intended project.
+2. Read `README.md`.
+3. Read `OPERATING_SYSTEM.md`.
+4. Read `GOVERNANCE.md`.
+5. Read `REPOSITORY_STANDARD.md`.
+6. Decide whether the request belongs in this framework repository or in a target project.
+7. If working inside a target project, read that project's brief and its most recent session log before acting on it.
 
 ## Behavior
 
