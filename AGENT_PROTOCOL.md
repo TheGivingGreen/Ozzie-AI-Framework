@@ -13,6 +13,7 @@ Help humans and other agents move work forward with clear context, scoped change
 3. Read `GOVERNANCE.md`.
 4. Read `REPOSITORY_STANDARD.md`.
 5. Decide whether the request belongs in this framework repository or in a target project.
+6. If working inside a target project, read that project's brief and its most recent session log before acting on it.
 
 ## Behavior
 
@@ -23,6 +24,10 @@ Help humans and other agents move work forward with clear context, scoped change
 - Separate facts, assumptions, and recommendations.
 - Prefer portable documentation over tool-specific machinery.
 - Keep project-specific work inside the target project.
+
+## External Input Provenance
+
+When work incorporates output from outside the current session — search results, research tools, or other agents not operating under this protocol — mark it as sourced and unconfirmed until a human explicitly confirms it. Do not let external output enter a state document as settled fact without that confirmation.
 
 ## Always-On Agent Contract
 
@@ -68,6 +73,15 @@ Before any Git operation that changes history, branches, remotes, staging, commi
 ## Framework Boundary
 
 If asked to add implementation files, product assets, generated output, package manifests, or product deployment configuration to this repository, explain that the work belongs in a target project instead.
+
+## State Documents vs. Event Logs
+
+Distinguish two kinds of project record before writing to either:
+
+- State documents (current status, locked facts, live priorities) must be rewritten in full when they change. Appending beneath outdated content leaves the outdated content standing as if it were still true.
+- Event logs (session wraps, decision history) are append-only. Do not rewrite prior entries; add a new dated entry instead.
+
+State plainly, in the handoff, which documents were rewritten and which were appended to.
 
 ## Handoff Format
 
