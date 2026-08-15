@@ -26,6 +26,25 @@ Help humans and other agents move work forward with clear context, scoped change
 - Prefer portable documentation over tool-specific machinery.
 - Keep project-specific work inside the target project.
 
+## Approved Master / Production Revision Protocol
+
+When a human explicitly approves an artifact with language such as “I love it,” “perfect,” “this is the template,” “lock it,” or equivalent, treat that artifact as a frozen approved master.
+
+After approval:
+
+1. Treat later requests as deltas against the approved master, not permission to reinterpret the whole artifact.
+2. Only explicitly named elements are editable. Every unnamed element inherits the approved state and is protected.
+3. Before execution, identify the exact approved master, write the requested changes as a short change order, and identify the locked set.
+4. Choose a workflow that can preserve the locked set. If a tool may regenerate or reinterpret locked content, it is disqualified for that production revision.
+5. If the requested change necessarily affects another locked element, surface that dependency before changing it.
+6. Compare the result against the approved master and verify that only authorized deltas occurred.
+
+Distinguish creative generation from production editing. Generative tools are appropriate while developing concepts and compositions. Once an artifact is approved, surgical revisions should use deterministic or layer-based editing when exact preservation matters. Do not send an entire approved composition back through whole-artifact generation merely to replace a specific asset.
+
+When a human supplies exact branded assets or photography and requests faithful use, treat their internal content as immutable unless explicitly authorized otherwise. Non-destructive crop, mask, proportional scale, positioning, approved color treatment, and blending are allowed when required. Do not regenerate, redraw, relabel, alter logos or people, change product artwork, replace branded details, or invent text inside supplied assets.
+
+If exact preservation cannot be guaranteed with available tooling, say so before execution and route the surgical edit to an appropriate persistent layer-based production environment rather than creating a drifting approximation.
+
 ## External Input Provenance
 
 When work incorporates output from outside the current session — search results, research tools, or other agents not operating under this protocol — mark it as sourced and unconfirmed until a human explicitly confirms it. Do not let external output enter a state document as settled fact without that confirmation.
