@@ -32,6 +32,16 @@ The framework should adapt to the kind of work being done:
 
 ## Project Lifecycle
 
+Scale the records and checks to the work, without weakening access or approval controls:
+
+- Advisory: for low-risk ideas and analysis, capture the goal, material assumptions and uncertainties in the response. A separate task record is optional.
+- Production: for a scoped deliverable, record the relevant scope, sources, acceptance criteria, owner and verification in a task brief or equivalent.
+- Execution: when an external action is authorized, also identify the exact action, approver, enforceable permissions and verification before acting.
+
+These are guidance for the existing task routes, not additional workflow stages or grants of authority. Raise the level of care whenever sensitivity, consequences or uncertainty warrant it.
+
+For substantial project work, use this lifecycle; a brief advisory response can apply the relevant steps without creating separate records:
+
 1. Start with a project brief.
 2. Identify the active goal and constraints.
 3. Convert rough intent into a scoped spec.
@@ -81,3 +91,5 @@ These artifacts may be standalone files or sections inside existing project docu
 3. Create a scoped spec and first task brief from `templates/agent-task.md`.
 4. Give participating agents `README.md`, `OPERATING_SYSTEM.md`, `AGENT_PROTOCOL.md`, `GOVERNANCE.md`, and `REPOSITORY_STANDARD.md`.
 5. Use adapters only when an agent tool requires a specific instruction filename or folder.
+
+Record the adopted framework release or commit and any local deviations in the project brief. Review later framework changes before adopting them; do not silently overwrite project-specific instructions. Verify that the chosen tool actually loads its entry point and required context.

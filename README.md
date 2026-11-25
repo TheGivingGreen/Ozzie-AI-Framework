@@ -19,11 +19,13 @@ Read these first. They are the source of truth.
 
 - `docs/`: expanded standards, architecture notes, and playbooks
 - `templates/`: copyable project artifacts
+- `templates/agent-spec.md`: portable specialist specification
+- `templates/source-register.md`: source ownership, authority and provenance
 - `.agents/`, `.codex/`, `.claude/`, `.cursor/`, and `.gemini/`: tool-specific adapters that point back to canonical files
 
 ## Use
 
-1. Copy the framework into a new project.
+1. Copy the framework into a new project and record the adopted release or commit and local deviations.
 2. Fill out `templates/project-brief.md` in that project.
 3. Give agents the canonical root files as their operating context.
 4. Use tool-specific adapters only when a tool expects a particular file path.

@@ -12,8 +12,7 @@ Trigger when the human indicates the session is closing, active work reaches a s
 2. Separate durable state changes from session activity.
 3. For each durable state change, identify the document that carries that fact. Rewrite state documents in full when they change. Do not append notes beneath outdated content. See `AGENT_PROTOCOL.md`, "State Documents vs. Event Logs."
 4. Write the session log as a new dated entry using the Handoff Format from `AGENT_PROTOCOL.md`.
-5. If code was touched, verify the changes landed via a live fetch of the deployed artifact before calling anything done.
-   - If a live-fetch result contradicts something the human confirmed in this session, ask the human to reconcile before flagging it as a gap. Do not treat the tool result as authoritative over the human's own word.
+5. Report local validation separately from any push, deployment and live verification. For an intentionally undeployed change, report that deployment was not verified; do not deploy solely to close a session. If a deployment was authorized and performed, verify the live artifact where feasible and report the evidence or limitation. Record conflicting human and observed evidence and seek reconciliation before declaring the conflict resolved.
 6. Store the session log where the project brief specifies.
 
 ## Re-Entry Prompt

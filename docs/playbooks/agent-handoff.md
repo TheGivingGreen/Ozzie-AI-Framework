@@ -14,6 +14,8 @@ Known risks:
 Next recommended step:
 ```
 
+For a production deliverable or external action, also include the project and task IDs; artifact path, version and classification; sources and their revisions or dates; assumptions and unresolved conflicts; acceptance checks and evidence; reviewer, next owner and due date; and the exact approval status. Identify the approved artifact and action separately. Reference the adopted framework, project profile and specialist versions when relevant. For a simple advisory handoff, include only the information the recipient needs.
+
 ## Rules
 
 - Be specific about file paths.
