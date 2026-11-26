@@ -18,10 +18,12 @@ Read these first. They are the source of truth.
 ## Supporting References
 
 - `docs/`: expanded standards, architecture notes, and playbooks
+- `docs/playbooks/chatgpt-codex-coordination.md`: shared records and handoff checks for ChatGPT and Codex
 - `templates/`: copyable project artifacts
 - `templates/agent-spec.md`: portable specialist specification
 - `templates/source-register.md`: source ownership, authority and provenance
-- `.agents/`, `.codex/`, `.claude/`, `.cursor/`, and `.gemini/`: tool-specific adapters that point back to canonical files
+- `AGENTS.md`: root Codex loading adapter
+- `.agents/`, `.codex/`, `.claude/`, `.cursor/`, and `.gemini/`: additional tool-specific adapters that point back to canonical files
 
 ## Use
 
